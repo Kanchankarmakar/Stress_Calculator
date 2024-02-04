@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stress Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Stress Calculator</h1>
+        <label for="workload">Workload (hours): </label>
+        <input type="number" id="workload" placeholder="Enter workload">
+
+        <label for="sleep">Sleep (hours): </label>
+        <input type="number" id="sleep" placeholder="Enter sleep duration">
+
+        <label for="relationships">Relationships Stress (1-10): </label>
+        <input type="number" id="relationships" placeholder="Enter stress level" min="1" max="10">
+
+        <button onclick="calculateStress()">Calculate Stress</button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="stress-levels">
+        <div class="normal">Normal</div>
+        <div class="medium">Medium</div>
+        <div class="high">High</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

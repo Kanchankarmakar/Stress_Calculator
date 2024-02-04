@@ -1,0 +1,91 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Just for fun! */
+    background-color: #ffe4b5; /* Moccasin */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #b01717; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #4caf50; /* Green */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2ec035; /* Darker Green */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Add some fun emojis */
+#result::after {
+    content: " 😄";
+    font-size: 24px;
+}
+
+.stress-levels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.normal, .medium, .high {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.normal {
+    background-color: #4caf50; /* Green */
+    color: #fff;
+}
+
+.medium {
+    background-color: #ff9800; /* Orange */
+    color: #fff;
+}
+
+.high {
+    background-color: #f44336; /* Red */
+    color: #fff;
+}
